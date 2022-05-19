@@ -225,7 +225,8 @@
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p>
       </div>
       <div class="w3-col m6">
-        <img class="w3-image " src="img/vrtools.jpg" alt="Imagem do website do VRTools" width="700" height="394">
+        <img class="w3-image w3-hide right" src="img/vrtools.jpg" alt="Imagem do website do VRTools" width="700"
+          height="394">
       </div>
     </div>
   </div>
@@ -234,7 +235,7 @@
   <div class="w3-container w3-light-gray" style="padding:128px 16px" id="orbi">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <img class="w3-image " src="img/orbi.jpg" alt="Buildings" width="700" height="394">
+        <img class="w3-image w3-hide left" src="img/orbi.jpg" alt="Buildings" width="700" height="394">
       </div>
       <div class="w3-col m6">
         <h3 class="primary">OrBI</h3>
@@ -260,12 +261,12 @@
           beneficiar indivíduos com dificuldade de deslocamento que poderiam fazer suas atividades físicas a domicílio,
           com a supervisão de um profissional de saúde.
         </p>
-        <p>Colaborador: Prof. Luiz Maurílio da Silva Maciel (especialista em visão computacional)        </p>
+        <p>Colaborador: Prof. Luiz Maurílio da Silva Maciel (especialista em visão computacional) </p>
         <!-- <p><a href="" target="_blank" class="w3-button w3-black"><i
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p> -->
       </div>
       <div class="w3-col m6">
-        <img class="w3-image " src="img/fisiovr.jpg" alt="Logo do fisiovr" width="700" height="394">
+        <img class="w3-image w3-hide right" src="img/fisiovr.jpg" alt="Logo do fisiovr" width="700" height="394">
       </div>
     </div>
   </div>
@@ -274,7 +275,7 @@
   <div class="w3-container w3-light-gray" style="padding:128px 16px" id="recyclos">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <img class="w3-image " src="img/recyclos.jpg" alt="Logo do recyclos" width="700" height="394">
+        <img class="w3-image w3-hide left" src="img/recyclos.jpg" alt="Logo do recyclos" width="700" height="394">
       </div>
       <div class="w3-col m6">
         <h3 class="primary">Recyclos</h3>
@@ -321,7 +322,7 @@
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p> -->
       </div>
       <div class="w3-col m6">
-        <img class="w3-image " src="img/elos.jpg" alt="Logo do elos" width="700" height="394">
+        <img class="w3-image w3-hide right" src="img/elos.jpg" alt="Logo do elos" width="700" height="394">
       </div>
     </div>
   </div>
@@ -425,6 +426,52 @@
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
         class="w3-hover-text-green">w3.css</a></p>
   </footer>
+
+  <script>
+    const left = document.getElementsByClassName('left');
+    const right = document.getElementsByClassName('right')
+
+    window.addEventListener('scroll', fadein)
+
+    function fadein() {
+      const windowHeight = window.innerHeight;
+
+      for (let el of left) {
+        let top = el.getBoundingClientRect().top;
+        if (top < windowHeight - 50) {
+          el.classList.remove('w3-hide')
+          el.classList.add('w3-animate-left')
+        }
+        else {
+          el.classList.remove('w3-animate-left')
+          el.classList.add('w3-hide')
+        }
+      }
+
+      for (let el of right) {
+        let top = el.getBoundingClientRect().top;
+        if (top < windowHeight - 50) {
+          el.classList.remove('w3-hide')
+          el.classList.add('w3-animate-right')
+        }
+        else {
+          el.classList.remove('w3-animate-right')
+          el.classList.add('w3-hide')
+        }
+      }
+
+      // for (var i = 0; i < reveals.length; i++) {
+      //   // var windowHeight = window.innerHeight;
+      //   var elementTop = reveals[i].getBoundingClientRect().top;
+      //   var elementVisible = 150;
+      //   if (elementTop < windowHeight - elementVisible) {
+      //     reveals[i].classList.add("active");
+      //   } else {
+      //     reveals[i].classList.remove("active");
+      //   }
+      // }
+    }
+  </script>
 </body>
 
 </html>
