@@ -25,6 +25,18 @@
       background-color: var(--light-color);
     }
 
+    .progress {
+      overflow-y: auto;
+      word-wrap: break-word;
+      height: 100%;
+      min-height: max-content;
+      /* border-radius: 7%; */
+      border-right: 1px solid white;
+      /* border-left: 1px solid black; */
+      /* margin-right: 1px; */
+      /* color: white !important; */
+    }
+
     body,
     h1,
     h2,
@@ -182,8 +194,7 @@
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p>
       </div>
       <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="img/vrtools.jpg" alt="Imagem do website do VRTools" width="700"
-          height="394">
+        <img class="w3-image " src="img/vrtools.jpg" alt="Imagem do website do VRTools" width="700" height="394">
       </div>
     </div>
   </div>
@@ -192,7 +203,7 @@
   <div class="w3-container w3-light-gray" style="padding:128px 16px">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="img/orbi.jpg" alt="Buildings" width="700" height="394">
+        <img class="w3-image " src="img/orbi.jpg" alt="Buildings" width="700" height="394">
       </div>
       <div class="w3-col m6">
         <h3 class="primary">OrBI</h3>
@@ -222,7 +233,7 @@
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p> -->
       </div>
       <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="img/fisiovr.jpg" alt="Logo do fisiovr" width="700" height="394">
+        <img class="w3-image " src="img/fisiovr.jpg" alt="Logo do fisiovr" width="700" height="394">
       </div>
     </div>
   </div>
@@ -231,7 +242,7 @@
   <div class="w3-container w3-light-gray" style="padding:128px 16px">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="img/recyclos.jpg" alt="Logo do recyclos" width="700" height="394">
+        <img class="w3-image " src="img/recyclos.jpg" alt="Logo do recyclos" width="700" height="394">
       </div>
       <div class="w3-col m6">
         <h3 class="primary">Recyclos</h3>
@@ -265,42 +276,95 @@
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p> -->
       </div>
       <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="img/elos.jpg" alt="Logo do elos" width="700" height="394">
+        <img class="w3-image " src="img/elos.jpg" alt="Logo do elos" width="700" height="394">
       </div>
     </div>
   </div>
 
-  <!-- Team Section -->
-  <div class="w3-container" style="padding:128px 16px" id="team">
-    <h3 class="w3-center">Progresso</h3>
-    <!-- <p class="w3-center w3-large">The ones who runs this company</p> -->
-    <div class="w3-row">
-      <div class="w3-col m2" style="visibility: hidden;">-</div>
-      <div class="w3-col m8">
-        <span class="w3-wide w3-col s2">VRTOOLS</span>
-        <div class="w3-grey w3-col s10">
-          <div class="w3-col s4 w3-green w3-center w3-border-right" style="width:25%">Levantamento bibliográfica /
-            Análise inicial</div>
-          <div class="w3-col s4 w3-green w3-center w3-border-right" style="width:25%">90%</div>
-          <div class="w3-col s4 w3-green w3-center w3-border-right" style="width:25%">90%</div>
-          <div class="w3-col s4 w3-dark-grey w3-center" style="width:20%">90%</div>
+  <!-- Progressao -->
+  <div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+      <div class="w3-col m4">
+        <h2 class="primary w3-center">Progesso dos projetos</h2>
+        <p class="w3-center">As barras ao lado mostram em que estágio cada projeto se encontra atualmente segundo a legenda abaixo</p>
+        <div class="w3-container w3-center">
+          <div class="w3-col m3 w3-card w3-green w3-padding w3-margin">Finalizado</div>
+          <div class="w3-col m3 w3-card w3-deep-purple w3-padding w3-margin">Em progresso</div>
+          <div class="w3-col m3 w3-card w3-brown w3-padding w3-margin">Próximo passo</div>
         </div>
       </div>
-    </div>
-
-    <div class="w3-row">
-      <div class="w3-col m2" style="visibility: hidden;">-</div>
       <div class="w3-col m8">
-        <span class="w3-wide w3-col s2">VRTOOLS</span>
-        <div class="w3-grey w3-col s10">
-          <div class="w3-col s4 w3-green w3-center w3-border-right" style="width:25%">Concluido</div>
-          <div class="w3-col s4 w3-green w3-center w3-border-right" style="width:25%">90%</div>
-          <div class="w3-col s4 w3-green w3-center w3-border-right" style="width:25%">90%</div>
-          <div class="w3-col s4 w3-dark-grey w3-center" style="width:20%">90%</div>
+        <!-- vrtools -->
+        <h4 class="w3-wide primary" style="margin-bottom: 0;">VRTools</h4>
+        <div class="w3-dark-gray w3-row w3-round" style="height: 4em;">
+          <div class="w3-container progress w3-col s3 w3-green w3-center ">
+            Levantamento bibliográfico /<br> Análise inicial
+          </div>
+          <div class="w3-container progress w3-col s3 w3-green w3-center ">
+            Desenvolvimento <br>do projeto
+          </div>
+          <div class="w3-container progress w3-col s3 w3-green w3-center ">
+            Avaliação do<br> projeto piloto
+          </div>
+          <div class="w3-container progress w3-col s3 w3-brown w3-center ">
+            Aplicação na<br> comunidade
+          </div>
         </div>
+        <!-- end vrtools -->
+
+        <!-- Orbi -->
+        <h4 class="w3-wide primary w3-margin-top" style="margin-bottom: 0;">OrBI</h4>
+        <div class="w3-dark-gray w3-row w3-round" style="height: 4em;">
+          <div class="w3-container progress w3-col s3 w3-green w3-center ">
+            Levantamento bibliográfico /<br> Análise inicial
+          </div>
+          <div class="w3-container progress w3-col s3 w3-green w3-center ">
+            Desenvolvimento <br>do projeto
+          </div>
+          <div class="w3-container progress w3-col s3 w3-green w3-center ">
+            Avaliação do<br> projeto piloto
+          </div>
+          <div class="w3-container progress w3-col s3 w3-brown w3-center ">
+            Aplicação na<br> comunidade
+          </div>
+        </div>
+        <!-- end orbi -->
+
+        <!-- FisioVR -->
+        <h4 class="w3-wide primary w3-margin-top" style="margin-bottom: 0;">FisioVR</h4>
+        <div class="w3-dark-gray w3-row w3-round" style="height: 4em;">
+          <div class="w3-container progress w3-col s3 w3-green w3-center ">
+            Levantamento bibliográfico /<br> Análise inicial
+          </div>
+          <div class="w3-container progress w3-col s3 w3-deep-purple w3-center">
+            Desenvolvimento <br>do projeto
+          </div>
+        </div>
+        <!-- end fisio vr -->
+
+        <!-- recyclos -->
+        <h4 class="w3-wide primary w3-margin-top" style="margin-bottom: 0;">Recyclos</h4>
+        <div class="w3-dark-gray w3-row w3-round" style="height: 4em;">
+          <div class="w3-container progress w3-col s3 w3-deep-purple w3-center ">
+            Levantamento bibliográfico /<br> Análise inicial
+          </div>
+        </div>
+        <!-- end orbi -->
+
+        <!-- Orbi -->
+        <h4 class="w3-wide primary w3-margin-top" style="margin-bottom: 0;">ELoS</h4>
+        <div class="w3-dark-gray w3-row w3-round" style="height: 4em;">
+          <div class="w3-container progress w3-col s3 w3-deep-purple w3-center ">
+            Levantamento bibliográfico /<br> Análise inicial
+          </div>
+        </div>
+        <!-- end orbi -->
+
+
       </div>
     </div>
   </div>
+
 
   <!-- Promo Section "Statistics" -->
   <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
