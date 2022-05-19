@@ -225,7 +225,7 @@
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p>
       </div>
       <div class="w3-col m6">
-        <img class="w3-image w3-hide right" src="img/vrtools.jpg" alt="Imagem do website do VRTools" width="700"
+        <img class="w3-image right_img" src="img/vrtools.jpg" alt="Imagem do website do VRTools" width="700"
           height="394">
       </div>
     </div>
@@ -235,7 +235,7 @@
   <div class="w3-container w3-light-gray" style="padding:128px 16px" id="orbi">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <img class="w3-image w3-hide left" src="img/orbi.jpg" alt="Buildings" width="700" height="394">
+        <img class="w3-image left_img" src="img/orbi.jpg" alt="Buildings" width="700" height="394">
       </div>
       <div class="w3-col m6">
         <h3 class="primary">OrBI</h3>
@@ -266,7 +266,7 @@
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p> -->
       </div>
       <div class="w3-col m6">
-        <img class="w3-image w3-hide right" src="img/fisiovr.jpg" alt="Logo do fisiovr" width="700" height="394">
+        <img class="w3-image right_img" src="img/fisiovr.jpg" alt="Logo do fisiovr" width="700" height="394">
       </div>
     </div>
   </div>
@@ -275,7 +275,7 @@
   <div class="w3-container w3-light-gray" style="padding:128px 16px" id="recyclos">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <img class="w3-image w3-hide left" src="img/recyclos.jpg" alt="Logo do recyclos" width="700" height="394">
+        <img class="w3-image left_img" src="img/recyclos.jpg" alt="Logo do recyclos" width="700" height="394">
       </div>
       <div class="w3-col m6">
         <h3 class="primary">Recyclos</h3>
@@ -322,7 +322,7 @@
               class="fa fa-th">&nbsp;</i> Site do projeto</a></p> -->
       </div>
       <div class="w3-col m6">
-        <img class="w3-image w3-hide right" src="img/elos.jpg" alt="Logo do elos" width="700" height="394">
+        <img class="w3-image right_img" src="img/elos.jpg" alt="Logo do elos" width="700" height="394">
       </div>
     </div>
   </div>
@@ -428,48 +428,54 @@
   </footer>
 
   <script>
-    const left = document.getElementsByClassName('left');
-    const right = document.getElementsByClassName('right')
+    const left = document.getElementsByClassName('left_img');
+    const right = document.getElementsByClassName('right_img')
+    console.log(right)
 
-    window.addEventListener('scroll', fadein)
+    window.addEventListener('scroll', slidein)
 
-    function fadein() {
+    function slidein(e) {
       const windowHeight = window.innerHeight;
 
       for (let el of left) {
         let top = el.getBoundingClientRect().top;
         if (top < windowHeight - 50) {
-          el.classList.remove('w3-hide')
+          el.style.visibility = 'visible'
           el.classList.add('w3-animate-left')
         }
         else {
+          el.style.visibility = 'hidden'
           el.classList.remove('w3-animate-left')
-          el.classList.add('w3-hide')
         }
       }
 
       for (let el of right) {
         let top = el.getBoundingClientRect().top;
         if (top < windowHeight - 50) {
-          el.classList.remove('w3-hide')
+          el.style.visibility = 'visible'
           el.classList.add('w3-animate-right')
         }
         else {
+          el.style.visibility = 'hidden'
           el.classList.remove('w3-animate-right')
-          el.classList.add('w3-hide')
         }
       }
+    }
 
-      // for (var i = 0; i < reveals.length; i++) {
-      //   // var windowHeight = window.innerHeight;
-      //   var elementTop = reveals[i].getBoundingClientRect().top;
-      //   var elementVisible = 150;
-      //   if (elementTop < windowHeight - elementVisible) {
-      //     reveals[i].classList.add("active");
-      //   } else {
-      //     reveals[i].classList.remove("active");
-      //   }
-      // }
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    const mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
     }
   </script>
 </body>
