@@ -5,16 +5,22 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>Virtus</title>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/x-icon" href="/img/virtus.ico">
+  <link rel="icon" type="image/x-icon" href="img/virtus.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/w3.css">
+  <!-- <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
     :root {
       --main-color: #2b0548;
       --light-color: #aaa;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     .primary {
@@ -92,11 +98,23 @@
       </a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
-        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#about" class="w3-bar-item w3-button">
+          <i class="fa fa-info"></i>
+          SOBRE
+        </a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button"><i class="fa fa-th"></i> PROJETOS<i class="fa fa-caret-down"
+              style="margin-left: 5px;"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#vrtools" class="w3-bar-item w3-button">VRTools</a>
+            <a href="#orbi" class="w3-bar-item w3-button">OrBI</a>
+            <a href="#fisiovr" class="w3-bar-item w3-button">FisioVR</a>
+            <a href="#recyclos" class="w3-bar-item w3-button">Recyclos</a>
+            <a href="#elos" class="w3-bar-item w3-button">ELoS</a>
+          </div>
+        </div>
+        <a href="#progresso" class="w3-bar-item w3-button"><i class="fa fa-list"></i> PROGRESSO</a>
+        <!-- <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a> -->
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -110,12 +128,20 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
     style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar X</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+    <div class="w3-dark-gray">
+      <div class="w3-bar-item">PROJETOS</div>
+      <div class="w3-bar-block w3-card-4">
+        <a href="#vrtools" class="w3-bar-item w3-button">VRTools</a>
+        <a href="#orbi" class="w3-bar-item w3-button">OrBI</a>
+        <a href="#fisiovr" class="w3-bar-item w3-button">FisioVR</a>
+        <a href="#recyclos" class="w3-bar-item w3-button">Recyclos</a>
+        <a href="#elos" class="w3-bar-item w3-button">ELoS</a>
+      </div>
+    </div>
+    <a href="#progresso" class="w3-bar-item w3-button">PROGRESSO</a>
+    <!-- <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a> -->
   </nav>
 
   <!-- Header with full-height image -->
@@ -179,7 +205,7 @@
   </div>
 
   <!-- VRTOOLS -->
-  <div class="w3-container bg-light" style="padding:128px 16px">
+  <div class="w3-container bg-light" style="padding:128px 16px" id="vrtools">
     <div class="w3-row-padding">
       <div class="w3-col m6">
         <h3 style="color: var(--main-color);">VRTOOLS</h3>
@@ -200,7 +226,7 @@
   </div>
 
   <!-- OrBI -->
-  <div class="w3-container w3-light-gray" style="padding:128px 16px">
+  <div class="w3-container w3-light-gray" style="padding:128px 16px" id="orbi">
     <div class="w3-row-padding">
       <div class="w3-col m6">
         <img class="w3-image " src="img/orbi.jpg" alt="Buildings" width="700" height="394">
@@ -218,7 +244,7 @@
   </div>
 
   <!-- FisioVR -->
-  <div class="w3-container bg-light" style="padding:128px 16px">
+  <div class="w3-container bg-light" style="padding:128px 16px" id="fisiovr">
     <div class="w3-row-padding">
       <div class="w3-col m6">
         <h3 style="color: var(--main-color);">FISIOVR</h3>
@@ -239,7 +265,7 @@
   </div>
 
   <!-- Recyclos -->
-  <div class="w3-container w3-light-gray" style="padding:128px 16px">
+  <div class="w3-container w3-light-gray" style="padding:128px 16px" id="recyclos">
     <div class="w3-row-padding">
       <div class="w3-col m6">
         <img class="w3-image " src="img/recyclos.jpg" alt="Logo do recyclos" width="700" height="394">
@@ -259,7 +285,7 @@
   </div>
 
   <!-- ELOS -->
-  <div class="w3-container bg-light" style="padding:128px 16px">
+  <div class="w3-container bg-light" style="padding:128px 16px" id="elos">
     <div class="w3-row-padding">
       <div class="w3-col m6">
         <h3 style="color: var(--main-color);">ELoS</h3>
@@ -282,11 +308,12 @@
   </div>
 
   <!-- Progressao -->
-  <div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-container w3-light-grey w3-padding-64" id="progresso">
     <div class="w3-row-padding">
       <div class="w3-col m4">
         <h2 class="primary w3-center">Progesso dos projetos</h2>
-        <p class="w3-center">As barras ao lado mostram em que estágio cada projeto se encontra atualmente segundo a legenda abaixo</p>
+        <p class="w3-center">As barras ao lado mostram em que estágio cada projeto se encontra atualmente segundo a
+          legenda abaixo.</p>
         <div class="w3-container w3-center">
           <div class="w3-col m3 w3-card w3-green w3-padding w3-margin">Finalizado</div>
           <div class="w3-col m3 w3-card w3-deep-purple w3-padding w3-margin">Em progresso</div>
