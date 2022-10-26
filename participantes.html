@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Virtus</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="img/virtus.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">
+        <img src="img/virtus-256-2.png" style="height: 2em;">
+        <!-- HOME -->
+      </a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="/index.html#about" class="w3-bar-item w3-button">
+          <i class="fa fa-info"></i>
+          SOBRE
+        </a>
+        <a href="/participantes.html" class="w3-bar-item w3-button">
+          <i class="fa fa-users"></i>
+          PARTICIPANTES
+        </a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button"><i class="fa fa-th"></i> PROJETOS<i class="fa fa-caret-down"
+              style="margin-left: 5px;"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="/index.html#vrtools" class="w3-bar-item w3-button">VRTools</a>
+            <a href="/index.html#orbi" class="w3-bar-item w3-button">OrBI</a>
+            <a href="/index.html#fisiovr" class="w3-bar-item w3-button">FisioVR</a>
+            <a href="/index.html#recyclos" class="w3-bar-item w3-button">Recyclos</a>
+            <a href="/index.html#elos" class="w3-bar-item w3-button">ELoS</a>
+          </div>
+        </div>
+        <a href="/index.html#progresso" class="w3-bar-item w3-button"><i class="fa fa-list"></i> PROGRESSO</a>
+        <!-- <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a> -->
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar X</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+    <div class="w3-dark-gray">
+      <div class="w3-bar-item">PROJETOS</div>
+      <div class="w3-bar-block w3-card-4">
+        <a href="/index.html#vrtools" class="w3-bar-item w3-button">VRTools</a>
+        <a href="/index.html#orbi" class="w3-bar-item w3-button">OrBI</a>
+        <a href="/index.html#fisiovr" class="w3-bar-item w3-button">FisioVR</a>
+        <a href="/index.html#recyclos" class="w3-bar-item w3-button">Recyclos</a>
+        <a href="/index.html#elos" class="w3-bar-item w3-button">ELoS</a>
+      </div>
+    </div>
+    <a href="/index.html#progresso" class="w3-bar-item w3-button">PROGRESSO</a>
+    <!-- <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a> -->
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-text-white" style="padding:48px">
+      <span id="title" class="w3-jumbo w3-hide-small">
+        <img src="img/virtus-brand.png" />
+      </span><br>
+      <span id="title" class="w3-xxlarge w3-hide-large w3-hide-medium">
+        <img src="img/virtus-brand.png" />
+      </span><br>
+      <!-- <span class="w3-large" style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> -->
+      <!-- <p class="w3-display-bottommiddle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        <a href="#about"
+          class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Saiba
+          mais...</a></p> -->
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <a href="https://github.com/AVRGroup/virtus" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    </div>
+  </header>
+
+  <div class="w3-container w3-light-gray">
+    <p style="padding: 10px;"><strong>Coordenador</strong></p>
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/orientadorRodrigo.jpeg" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Rodrigo Luis de Souza da Silva</p>
+
+            <p style="line-height: 0.85; font-size: 1em;"><span style="color: #000000">
+
+            <p style="line-height: 0.85; font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/6878718102770367" target="_blank">lattes.cnpq.br/6878718102770367</a>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="w3-container w3-light-gray">
+    <p style="padding: 10px;"><strong>Professores colaboradores</strong></p>
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/professorCaniato.jpeg" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Marcelo Caniato</p>
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+            </strong></span>ELoS</p>
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/9704187911798485" target="_blank">lattes.cnpq.br/9704187911798485</a>
+            </p>
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/professorKnop.jpeg" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Igor Knop</p>
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+            </strong></span>ELoS</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/9170658424711012" target="_blank">lattes.cnpq.br/9170658424711012</a>
+            </p>
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/professorLuizMaurilio.jpg" alt=""
+               width="100px" height="100px">
+          </td>
+          
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Luiz Maurílio</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+            </strong></span>FisioVR</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/9704187911798485" target="_blank">http://lattes.cnpq.br/9704187911798485</a>
+            </p>
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/professorPagani.jpg" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Eduardo Pagani</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+            </strong></span>Recyclos</p>
+
+
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/2722036803654293" target="_blank">lattes.cnpq.br/2722036803654293</a>
+            </p>
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="w3-container w3-light-gray">
+    <p style="padding: 10px;"><strong>Alunos bolsistas</strong></p>
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/danielFisioVR.jpeg" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Daniel Muller Rezende</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+                </strong></span>FisioVR</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/9286013999555117" target="_blank">lattes.cnpq.br/9286013999555117</a>
+            </p>
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">LinkedIn:</span> </strong><a href="https://www.linkedin.com/in/daniel-muller-rezende-ab2542222
+              " target="_blank">linkedin.com/in/daniel-muller-rezende-ab2542222
+              </a>
+
+            </p>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/filipeFisioVR.jpeg" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em; ">Filipe de Lima Namorato</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+                </strong></span>FisioVR</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/6818029894846580" target="_blank">lattes.cnpq.br/6818029894846580</a>
+            </p>
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">LinkedIn:</span> </strong><a href="https://www.linkedin.com/in/filipenamorato
+                " target="_blank">linkedin.com/in/filipenamorato
+              </a>
+
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/virtus-brand.png" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Rayssa</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+                </strong></span>FisioVR</p>
+
+            <!--<p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/6818029894846580" target="_blank">lattes.cnpq.br/6818029894846580</a>
+            </p>
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">LinkedIn:</span> </strong><a href="
+            " target="_blank">falta linkedin
+              </a>
+
+            </p>-->
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/virtus-brand.png" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Rodrigo</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+                </strong></span>ELoS</p>
+
+            <!--<p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/6818029894846580" target="_blank">lattes.cnpq.br/6818029894846580</a>
+            </p>
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">LinkedIn:</span> </strong><a href="https://www.linkedin.com/in/filipenamorato
+            " target="_blank">linkedin.com/in/filipenamorato
+              </a>
+
+            </p>-->
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="w3-container w3-light-gray">
+    <p style="padding: 10px;"><strong>Alunos voluntários</strong></p>
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/virtus-brand.png" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Nilton</p>
+
+            <p style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+                </strong></span>Recyclos</p>
+
+            <!--<p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/6818029894846580" target="_blank">lattes.cnpq.br/6818029894846580</a>
+            </p>
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">LinkedIn:</span> </strong><a href="https://www.linkedin.com/in/filipenamorato
+            " target="_blank">linkedin.com/in/filipenamorato
+              </a>
+
+            </p>-->
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="border: 50px;margin-bottom: 7px" width="82%" cellspacing="10" cellpadding="10">
+      <tbody>
+        <tr>
+          <td style="border: none" width="9%">
+            <img src="/img/virtus-brand.png" alt=""
+               width="100px" height="100px">
+          </td>
+
+          <td>
+            <p style="line-height: 0.85;font-size: 1em;">Vitória</p>
+
+            <p  style="line-height: 0.85;font-size: 1em;"><span style="color: #000000"><strong>Projeto:
+                </strong></span>ELoS</p>
+
+            <!--<p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">Lattes:</span> </strong><a
+                href="http://lattes.cnpq.br/6818029894846580" target="_blank">lattes.cnpq.br/6818029894846580</a>
+            </p>
+            <p style="line-height: 0.85;font-size: 1em;"><strong><span style="color: #000000">LinkedIn:</span> </strong><a href="https://www.linkedin.com/in/filipenamorato
+            " target="_blank">linkedin.com/in/filipenamorato
+              </a>
+
+            </p>-->
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="w3-center w3-black w3-padding-64">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+  <script>
+    const left = document.getElementsByClassName('left');
+    const right = document.getElementsByClassName('right')
+
+    window.addEventListener('scroll', fadein)
+
+    function fadein() {
+      const windowHeight = window.innerHeight;
+
+      for (let el of left) {
+        let top = el.getBoundingClientRect().top;
+        if (top < windowHeight - 50) {
+          el.classList.remove('w3-hide')
+          el.classList.add('w3-animate-left')
+        }
+        else {
+          el.classList.remove('w3-animate-left')
+          el.classList.add('w3-hide')
+        }
+      }
+
+      for (let el of right) {
+        let top = el.getBoundingClientRect().top;
+        if (top < windowHeight - 50) {
+          el.classList.remove('w3-hide')
+          el.classList.add('w3-animate-right')
+        }
+        else {
+          el.classList.remove('w3-animate-right')
+          el.classList.add('w3-hide')
+        }
+      }
+
+      // for (var i = 0; i < reveals.length; i++) {
+      //   // var windowHeight = window.innerHeight;
+      //   var elementTop = reveals[i].getBoundingClientRect().top;
+      //   var elementVisible = 150;
+      //   if (elementTop < windowHeight - elementVisible) {
+      //     reveals[i].classList.add("active");
+      //   } else {
+      //     reveals[i].classList.remove("active");
+      //   }
+      // }
+    }
+  </script>
+</body>
+
+</html>
