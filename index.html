@@ -31,7 +31,7 @@
           <i class="fa fa-info"></i>
           SOBRE
         </a>
-        <a href="./participantes.html" class="w3-bar-item w3-button">
+        <a href="./pessoalAtivos.html" class="w3-bar-item w3-button">
           <i class="fa fa-users"></i>
           PARTICIPANTES
         </a>
@@ -63,6 +63,10 @@
     style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar X</a>
     <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+    <a href="./pessoalAtivos.html" class="w3-bar-item w3-button">
+      <i class=""></i>
+      PARTICIPANTES
+    </a>
     <div class="w3-dark-gray">
       <div class="w3-bar-item">PROJETOS</div>
       <div class="w3-bar-block w3-card-4">
@@ -398,6 +402,29 @@
       //     reveals[i].classList.remove("active");
       //   }
       // }
+    }
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
     }
   </script>
 </body>
