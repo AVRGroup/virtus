@@ -101,7 +101,7 @@ table{
   margin-top: 7;
   border: 50px;
   margin-bottom: 0px;
-  width: 50%;
+  width: 60%;
   height: 50%;
 }
 td{
@@ -111,4 +111,7 @@ td{
 }
 tr{
   padding: 0;
+}
+.sessao{
+  margin-left: 1em;
 }
