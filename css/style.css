@@ -47,7 +47,7 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Raleway", sans-serif
+  font-family: "Raleway", sans-serif;
 }
 
 body,
@@ -101,8 +101,8 @@ table{
   margin-top: 7;
   border: 50px;
   margin-bottom: 0px;
-  width: 45%;
-  height: 0%;
+  width: 50%;
+  height: 50%;
 }
 td{
   border: 0;
