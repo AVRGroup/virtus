@@ -2,18 +2,11 @@
 <html>
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Virtus</title>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/x-icon" href="img/virtus.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/w3.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
+   <script>
+      fetch('./html/head.html')
+      .then(response => response.text())
+      .then(html => document.head.innerHTML = html);
+   </script>
 </head>
 
 <body>
@@ -21,16 +14,10 @@
    <script>
    fetch('./html/navbar.html')
       .then(response => response.text())
-      .then(html => document.getElementById('navbar').innerHTML = html);
+      .then(html => {
+         document.getElementById('navbar').innerHTML = html
+      });
    </script>
-
-   <div id="mySidebar"></div>
-   <script>
-   fetch('./html/navbar.html')
-      .then(response => response.text())
-      .then(html => document.getElementById('mySidebar').innerHTML = html);
-   </script>
-
 
   <!-- Header with full-height image -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -257,70 +244,11 @@
   </div>
 
   <!-- Footer -->
-
   <footer class="w3-center w3-black w3-padding-64">
     <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
         class="w3-hover-text-green">w3.css</a></p>
   </footer>
-
-
-<script>
-    const left = document.getElementsByClassName('left');
-    const right = document.getElementsByClassName('right')
-
-    window.addEventListener('scroll', fadein);
-
-    function fadein() {
-      const windowHeight = window.innerHeight;
-
-      for (let el of left) {
-        let top = el.getBoundingClientRect().top;
-        if (top < windowHeight - 50) {
-          el.classList.remove('w3-hide');
-          el.classList.add('w3-animate-left');
-        }
-        else {
-          el.classList.remove('w3-animate-left');
-          el.classList.add('w3-hide');
-        }
-      }
-
-      for (let el of right) {
-        let top = el.getBoundingClientRect().top;
-        if (top < windowHeight - 50) {
-          el.classList.remove('w3-hide');
-          el.classList.add('w3-animate-right');
-        }
-        else {
-          el.classList.remove('w3-animate-right');
-          el.classList.add('w3-hide');
-        }
-      }
-    }
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
 </body>
 
 </html>
