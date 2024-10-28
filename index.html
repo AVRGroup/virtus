@@ -24,6 +24,14 @@
       .then(html => document.getElementById('navbar').innerHTML = html);
    </script>
 
+   <div id="mySidebar"></div>
+   <script>
+   fetch('./html/navbar.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('mySidebar').innerHTML = html);
+   </script>
+
+
   <!-- Header with full-height image -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-middle w3-text-white" style="padding:48px">
@@ -256,7 +264,8 @@
         class="w3-hover-text-green">w3.css</a></p>
   </footer>
 
-  <script>
+
+<script>
     const left = document.getElementsByClassName('left');
     const right = document.getElementsByClassName('right')
 
