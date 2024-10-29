@@ -98,16 +98,18 @@ img{
     border-radius: 5px;
 }
 table{
-  margin-top: 7;
-  border: 50px;
+  margin-top: 0px;
+  
   margin-bottom: 0px;
   width: 60%;
   height: 50%;
+  border-collapse: collapse;
 }
 td{
   border: 0;
   padding: 0;
-  
+  padding-left: 10px;
+  vertical-align: middle;
 }
 tr{
   padding: 0;

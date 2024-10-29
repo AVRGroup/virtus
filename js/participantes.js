@@ -14,11 +14,6 @@
    projeto: 'ELoS',
    lattesUrl: 'http://lattes.cnpq.br/9704187911798485'},
 
-   { imgUrl: './img/professorKnop.jpeg', 
-   nome: 'Igor Knop', 
-   projeto: 'ELoS',
-   lattesUrl: 'http://lattes.cnpq.br/9170658424711012' },
-
    { imgUrl: "./img/professorLuizMaurilio.jpg", 
    nome: 'Luiz Maurílio',
    projeto: 'FisioVR', 
