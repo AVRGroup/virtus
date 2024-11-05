@@ -92,11 +92,10 @@ img{
     border-radius: 5px;
 }
 table{
-  margin-top: 0px;
-  
+  margin-top: 0px;  
   margin-bottom: 0px;
-  width: 60%;
-  height: 50%;
+  width: 90%;
+  height: 90%;
   border-collapse: collapse;
 }
 td{
