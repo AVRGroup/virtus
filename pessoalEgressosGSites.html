@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <title>Virtus</title>
+   <meta charset="UTF-8">
+   <link rel="icon" type="image/x-icon" href="img/virtus.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/w3.css">
+   <link rel="stylesheet" href="css/font-awesome.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <script src="./js/scripts.js"></script>
+   <!--- INCLUIR NOVOS PARTICANTES AQUI-->
+   <script src="./js/participantes.js"></script>
+</head>
+
+<body>
+   <p style="padding: 1px;"><strong></strong></p>
+   <div class="sessao">
+      <p style="padding-top: 0px; line-height: 0"><strong>Egressos</strong></p>
+      <table width="82%" cellspacing="10" cellpadding="10">
+         <tbody id="perfisEgressos">
+            <!-- Perfis serão adicionados aqui -->
+         </tbody>
+      </table>
+   </div <div class="sessao">
+</body>
+</html>
+
+
+<script>
+   const tbodyE = document.getElementById('perfisEgressos');
+   perfisEgressos.forEach((perfil) => {
+      tbodyE.innerHTML += criarPerfil(perfil.imgUrl, perfil.nome, perfil.projeto, perfil.lattesUrl, perfil.linkedinUrl);
+   });
+</script>
