@@ -126,5 +126,5 @@ body::-webkit-scrollbar {
  }
 
  iframe.embedly-embed {
-   height: 2500px !important;
+   height: 100% !important;
 }
