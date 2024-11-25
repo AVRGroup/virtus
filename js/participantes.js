@@ -32,7 +32,7 @@
    { imgUrl: './img/lara.png', 
    nome: 'Lara Gonçalves de Souza', 
    projeto: 'ELoS',
-   lattesUrl: 'null', 
+   lattesUrl: 'http://lattes.cnpq.br/5003854997873831', 
    linkedinUrl: 'https://www.linkedin.com/in/lara-goncalvs' },
 
    { imgUrl: './img/leticiaElos.jpeg', 
