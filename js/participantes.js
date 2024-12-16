@@ -9,6 +9,11 @@
 
    //----------------------------- PROFESSORES COLABORADORES -------------------------
    const perfisProfColab = [
+   { imgUrl: './img/professorBernardes.png', 
+      nome: 'Marcelo Bernardes Vieira', 
+      projeto: 'VEM-Slam',
+      lattesUrl: 'http://lattes.cnpq.br/0858482819476716'},
+
    { imgUrl: './img/professorCaniato.jpeg', 
    nome: 'Marcelo Caniato', 
    projeto: 'ELoS',
