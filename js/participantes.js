@@ -31,38 +31,48 @@
    const perfisAlunos = [
    { imgUrl: './img/lara.png', 
    nome: 'Lara Gonçalves de Souza', 
-   projeto: 'ELoS',
+   projeto: 'MUSA',
    lattesUrl: 'http://lattes.cnpq.br/5003854997873831', 
    linkedinUrl: 'https://www.linkedin.com/in/lara-goncalvs' },
 
-   { imgUrl: './img/leticiaElos.jpeg', 
-   nome: 'Letícia Miyuki Ferreira Yamashita', 
-   projeto: 'ELoS',
-   lattesUrl: 'http://lattes.cnpq.br/0366730628007428', 
-   linkedinUrl: 'https://www.linkedin.com/in/let%C3%ADcia-miyuki-yamashita-8b56b4293/' },
-
-   { imgUrl: './img/marcosElos.jpeg', 
-   nome: 'Marcos Vinícius Santos de Lima', 
-   projeto: 'ELoS',
-   lattesUrl: 'https://lattes.cnpq.br/7756604103041345', 
-   linkedinUrl: 'https://www.linkedin.com/in/marcos-vinixius/' },
-   // Adicione mais perfis aqui
+   { imgUrl: './img/niltoRecyclos.jpeg', 
+      nome: 'Nilton Teixeira', 
+      projeto: 'Recyclos',
+      lattesUrl: 'http://lattes.cnpq.br/8963145201490611', 
+      linkedinUrl: 'https://www.linkedin.com/in/nilton-teixeira-182790255/' },
+   
+   { imgUrl: './img/luan.jpg', 
+      nome: 'Luan Brandão de Oliveira', 
+      projeto: 'ELoS',
+      lattesUrl: 'http://lattes.cnpq.br/1325840001452162', 
+      linkedinUrl: 'https://www.linkedin.com/in/luanbrandaoo/' },
+   
    ];
 
 
    //--------------------------- VOLUNTÁRIOS ---------------------------------
    const perfisVoluntarios = [
-   { imgUrl: './img/niltoRecyclos.jpeg', 
-   nome: 'Nilton Teixeira', 
-   projeto: 'Recyclos',
-   lattesUrl: 'http://lattes.cnpq.br/8963145201490611', 
-   linkedinUrl: 'https://www.linkedin.com/in/nilton-teixeira-182790255/' },
    ];   
 
 
 
 //--------------------------- EGRESSOS ---------------------------------
 const perfisEgressos = [
+   { 
+      imgUrl: './img/leticiaElos.jpeg', 
+      nome: 'Letícia Miyuki Ferreira Yamashita', 
+      projeto: 'ELoS',
+      lattesUrl: 'http://lattes.cnpq.br/0366730628007428', 
+      linkedinUrl: 'https://www.linkedin.com/in/let%C3%ADcia-miyuki-yamashita-8b56b4293/' },
+   
+      { 
+      imgUrl: './img/marcosElos.jpeg', 
+      nome: 'Marcos Vinícius Santos de Lima', 
+      projeto: 'ELoS',
+      lattesUrl: 'https://lattes.cnpq.br/7756604103041345', 
+      linkedinUrl: 'https://www.linkedin.com/in/marcos-vinixius/' },
+
+
    {
       imgUrl: './img/danielFisioVR.jpeg',
       nome: 'Daniel Muller Rezende',
